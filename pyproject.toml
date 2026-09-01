@@ -3,10 +3,9 @@ name = "sparkutils"
 version = "0.1.0"
 description = "getspark, getsail, getdatabricksspark, import pyspark functions"
 requires-python = ">=3.12"
-dependencies = [
-    "pyspark[connect]>=4.0.1",
-    "pysail>=0.7.1",
-]
+dependencies = []
+# just the functions - pyspark/pysail come from whatever project installs this
+# (pipe_hdb_sparkbricks already declares both directly), not from here.
 
 [build-system]
 requires = ["hatchling"]
